@@ -1,0 +1,17 @@
+body {
+  font-family: Garamond;
+  text-align: center;
+}
+
+.board {
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  display: inline-block;
+}
