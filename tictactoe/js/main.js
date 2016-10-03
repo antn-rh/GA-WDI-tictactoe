@@ -41,6 +41,7 @@ for(var i = 0; i < cells.length; i++) {
       changeText.innerHTML = "It is O's turn";
       counter++;
       console.log(counter);
+      // the push command does not add the index number to the selected array
       xMoves.push(this);
       // checkForWin(xMoves, "X");
     }
@@ -49,6 +50,7 @@ for(var i = 0; i < cells.length; i++) {
       changeText.innerHTML = "It is X's turn";
       counter++;
       console.log(counter);
+      // the push command does not add the index number to the selected array
       oMoves.push(this);
       // checkForWin(oMoves, "O");
     }
@@ -59,3 +61,5 @@ for(var i = 0; i < cells.length; i++) {
 }
 
 // function checkForWin(movesArray, name)
+// this function should check to see if either xMoves or oMoves contains a winning combination
+// the code should set an alert to 'x/o Player Wins!'
