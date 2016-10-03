@@ -8,8 +8,8 @@ var changeText = document.getElementById('playerTurn');
 var counter = 2;
 var winningCombinations = [[0,1,2],[3,4,5],[6,7,8],
 [0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
-var OMoves = [];
-var XMoves = [];
+var oMoves = [];
+var xMoves = [];
 
 // failed code
 // if(counter % 2 === 0) {
@@ -41,16 +41,16 @@ for(var i = 0; i < cells.length; i++) {
       changeText.innerHTML = "It is O's turn";
       counter++;
       console.log(counter);
-      // XMoves.push();
-      // checkForWin(XMoves, "X");
+      xMoves.push(this);
+      // checkForWin(xMoves, "X");
     }
     else {
       this.style.backgroundImage = 'url(' + oplayer + ')';
       changeText.innerHTML = "It is X's turn";
       counter++;
       console.log(counter);
-      // OMoves.push();
-      // checkForWin(OMoves, "O");
+      oMoves.push(this);
+      // checkForWin(oMoves, "O");
     }
     if(counter >= 11) {
       alert("It's a draw!")
