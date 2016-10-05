@@ -5,7 +5,7 @@ var oplayer = 'http://www.iconsdb.com/icons/preview/green/circle-outline-xxl.png
 
 var cells = document.getElementsByClassName('cell');
 var changeText = document.getElementById('playerTurn');
-var counter = 2;
+var counter = 0;
 var winningCombinations = [[0,1,2],[3,4,5],[6,7,8],
 [0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 var oMoves = [];
@@ -54,12 +54,9 @@ for(var i = 0; i < cells.length; i++) {
       oMoves.push(this);
       // checkForWin(oMoves, "O");
     }
-    if(counter >= 11) {
-      alert("It's a draw!")
-    }
   })
 }
 
 // function checkForWin(movesArray, name)
 // this function should check to see if either xMoves or oMoves contains a winning combination
-// the code should set an alert to 'x/o Player Wins!'
+// the code should set an alert to 'x/o Player Wins! '
